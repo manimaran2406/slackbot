@@ -1,0 +1,148 @@
+{
+	"blocks": [
+		{
+			"dispatch_action": true,
+			"type": "input",
+			"element": {
+				"type": "plain_text_input",
+				"dispatch_action_config": {
+					"trigger_actions_on": [
+						"on_character_entered"
+					]
+				},
+				"action_id": "placement_id-input"
+			},
+			"label": {
+				"type": "plain_text",
+				"text": "Placement ID",
+				"emoji": true
+			}
+		},
+		{
+			"type": "divider"
+		},
+		{
+			"type": "input",
+			"element": {
+				"type": "plain_text_input",
+				"action_id": "plain_text_input-action"
+			},
+			"label": {
+				"type": "plain_text",
+				"text": "Network ID",
+				"emoji": true
+			}
+		},
+		{
+			"type": "divider"
+		},
+		{
+			"type": "input",
+			"element": {
+				"type": "static_select",
+				"placeholder": {
+					"type": "plain_text",
+					"text": "Select a query type",
+					"emoji": true
+				},
+				"options": [
+					{
+						"text": {
+							"type": "plain_text",
+							"text": "Ad request",
+							"emoji": true
+						},
+						"value": "ad_request"
+					},
+					{
+						"text": {
+							"type": "plain_text",
+							"text": "Transactions",
+							"emoji": true
+						},
+						"value": "transactions"
+					},
+					{
+						"text": {
+							"type": "plain_text",
+							"text": "ACK",
+							"emoji": true
+						},
+						"value": "ack"
+					}
+				],
+				"action_id": "query_type_select-action"
+			},
+			"label": {
+				"type": "plain_text",
+				"text": "Query type",
+				"emoji": true
+			}
+		},
+		{
+			"type": "divider"
+		},
+		{
+			"type": "context",
+			"elements": [
+				{
+					"type": "plain_text",
+					"text": "Enter your date range",
+					"emoji": true
+				}
+			]
+		},
+		{
+			"type": "actions",
+			"elements": [
+				{
+					"type": "datepicker",
+					"initial_date": "2024-01-01",
+					"placeholder": {
+						"type": "plain_text",
+						"text": "Select a date",
+						"emoji": true
+					},
+					"action_id": "start_datepicker-action"
+				},
+				{
+					"type": "datepicker",
+					"initial_date": "2024-01-01",
+					"placeholder": {
+						"type": "plain_text",
+						"text": "Select a date",
+						"emoji": true
+					},
+					"action_id": "end_datepicker-action"
+				}
+			]
+		},
+		{
+			"type": "actions",
+			"elements": [
+				{
+					"type": "radio_buttons",
+					"options": [
+						{
+							"text": {
+								"type": "plain_text",
+								"text": "Retrieve Only Query",
+								"emoji": true
+							},
+							"value": "value-0"
+						},
+						{
+							"text": {
+								"type": "plain_text",
+								"text": "Run Query and Display The Output",
+								"emoji": true
+							},
+							"value": "value-1"
+						}
+					],
+					"action_id": "actionId-0"
+				}
+			]
+		}
+	]
+}

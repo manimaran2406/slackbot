@@ -1,0 +1,75 @@
+{
+	"blocks": [
+		{
+			"type": "input",
+			"block_id": "ack_columns_block",
+			"label": {
+				"type": "plain_text",
+				"text": "Select columns to include",
+				"emoji": true
+			},
+			"element": {
+				"type": "checkboxes",
+				"options": [
+					{
+						"text": {
+							"type": "plain_text",
+							"text": "Request Time",
+							"emoji": true
+						},
+						"value": "request_time"
+					},
+					{
+						"text": {
+							"type": "plain_text",
+							"text": "Advertisement Placement ID",
+							"emoji": true
+						},
+						"value": "advertisement_placement_id"
+					},
+					{
+						"text": {
+							"type": "plain_text",
+							"text": "Profile",
+							"emoji": true
+						},
+						"value": "profile"
+					},
+					{
+						"text": {
+							"type": "plain_text",
+							"text": "Select Ads",
+							"emoji": true
+						},
+						"value": "select_ads"
+					},
+					{
+						"text": {
+							"type": "plain_text",
+							"text": "Fallback Ads",
+							"emoji": true
+						},
+						"value": "fallback_ads"
+					},
+					{
+						"text": {
+							"type": "plain_text",
+							"text": "Impressions",
+							"emoji": true
+						},
+						"value": "impressions"
+					},
+					{
+						"text": {
+							"type": "plain_text",
+							"text": "ACK Ratio",
+							"emoji": true
+						},
+						"value": "ack_ratio"
+					}
+				],
+				"action_id": "ack_columns_select-action"
+			}
+		}
+	]
+}

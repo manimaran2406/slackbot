@@ -1,0 +1,34 @@
+{
+	"blocks": [
+		{
+			"type": "input",
+			"element": {
+				"type": "radio_buttons",
+				"options": [
+					{
+						"text": {
+							"type": "plain_text",
+							"text": "Shaper",
+							"emoji": true
+						},
+						"value": "value-1"
+					},
+					{
+						"text": {
+							"type": "plain_text",
+							"text": "Generator",
+							"emoji": true
+						},
+						"value": "value-2"
+					}
+				],
+				"action_id": "radio_buttons-action"
+			},
+			"label": {
+				"type": "plain_text",
+				"text": "LQS Query Crafter",
+				"emoji": true
+			}
+		}
+	]
+}
